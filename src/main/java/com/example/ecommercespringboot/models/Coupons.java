@@ -10,6 +10,7 @@ import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
@@ -22,6 +23,7 @@ import java.math.BigDecimal;
 @Table(name = "coupons")
 public class Coupons implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id

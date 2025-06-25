@@ -10,6 +10,7 @@ import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 @Entity
@@ -21,6 +22,7 @@ import java.io.Serializable;
 @Table(name = "roles")
 public class Roles implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
